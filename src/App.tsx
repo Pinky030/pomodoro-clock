@@ -27,6 +27,7 @@ function App() {
 
   const addTodo = async () => {
     await invoke("add_todo", { name });
+    getTodos();
   };
 
   const getTodos = async () => {
